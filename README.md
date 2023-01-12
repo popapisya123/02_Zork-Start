@@ -30,3 +30,5 @@ Room(String description)
 private HashMap<String, Room> exits;
 
 ### 1.5 Hier drin ist es aber Kalt! - Für einen bestimmten Raum soll eine Meldung „Das Fenster ist offen, brrrrrrr“ programmiert werden. Diese wird ausgegeben wenn der Raum betreten wird. Programmieren Sie diese Logik in der Klasse Game.
+
+office = new Room("the computing admin office, the window is opened, it's cold here, brrrr");
