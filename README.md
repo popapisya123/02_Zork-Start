@@ -57,4 +57,5 @@ Eine Klasse für Hunter, der den Spieler jagt, und wenn man falsche Entscheidung
 - Doctor's Office
 - X-ray Room
 - Outside
+
 ![](Rooms.png)
