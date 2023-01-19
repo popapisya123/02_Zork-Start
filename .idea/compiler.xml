@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Zork-Start" target="1.8" />
+      <module name="Zork-Start" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>
