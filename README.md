@@ -44,9 +44,9 @@ Ziel des Spiels ist es, einen Schlüssel zu finden, um damit die richtige Tür z
 
 ## Welche Klassen müssen implementiert werden?
 
-Ein Timer, damit man zetilich limitiert ist.
+Ein Timer, damit man zeitlich limitiert ist.
 Eine Klasse für verschiedene Gegenstände, die man in einem Raum finden kann.
-Eine Klasse für Hunter, der den Spieler jagt, und wenn man falsche Entschiedungen trifft, kommt er immer näher 
+Eine Klasse für Hunter, der den Spieler jagt, und wenn man falsche Entscheidungen trifft, kommt er immer näher 
 
 
 ## Welche Räume müssen erstellt werden?
@@ -55,6 +55,5 @@ Eine Klasse für Hunter, der den Spieler jagt, und wenn man falsche Entschiedung
 - Treatment Room
 - Group Room
 - Doctor's Office
-- Kitchen
-- Dining Room
 - X-ray Room
+- Outside
