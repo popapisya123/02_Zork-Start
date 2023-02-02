@@ -25,12 +25,28 @@ public class Pocket {
 
   public boolean isAbleToAddItem() {
     double totalWeight = 0;
-    for (Key key : keys) {
-      totalWeight += key.getWeight();
+    if (keys.size() > 0) {
+      for (Key key : keys) {
+        totalWeight += key.getWeight();
+      }
     }
 
-    totalWeight += crowbar.getWeight();
+    if (crowbar != null) {
+      totalWeight += crowbar.getWeight();
+    }
 
     return totalWeight <= 30;
+  }
+
+  public void showItems() {
+    System.out.print("You have following items in your pocket");
+    if (keys.size() > 0) {
+      for (Key key : keys) {
+        System.out.print(", " + key.getDescription());
+      }
+    }
+    if (crowbar != null) {
+      System.out.println(", " + getCrowbar().getDescription());
+    }
   }
 }
