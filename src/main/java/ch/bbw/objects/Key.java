@@ -1,12 +1,13 @@
 package ch.bbw.objects;
 
-public class Key {
+public class Key extends Item {
 
   private int id;
   private double weight;
 
-  public Key(int name, double weight) {
-    this.id = name;
+  public Key(String type, String name, String description, int id, double weight) {
+    super(type, name, description);
+    this.id = id;
     this.weight = weight;
   }
 

@@ -1,4 +1,4 @@
-package ch.bbw.zork;
+package ch.bbw.objects;
 
 public class Item {
 

@@ -1,11 +1,12 @@
 package ch.bbw.objects;
 
-public class Crowbar {
+public class Crowbar extends Item {
 
   private int id;
   private double weight;
 
-  public Crowbar(int id, double weight) {
+  public Crowbar(String type, String name, String description, int id, double weight) {
+    super(type, name, description);
     this.id = id;
     this.weight = weight;
   }
