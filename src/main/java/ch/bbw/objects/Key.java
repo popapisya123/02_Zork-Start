@@ -4,8 +4,8 @@ public class Key extends Item {
 
   private int id;
 
-  public Key(String type, String name, String description, double weight, int id, boolean isPickable) {
-    super(type, name, description, weight, isPickable);
+  public Key (String name, String description, int id) {
+    super("key", name, description, 5);
     this.id = id;
   }
 
