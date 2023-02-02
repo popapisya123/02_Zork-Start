@@ -3,12 +3,10 @@ package ch.bbw.objects;
 public class Key extends Item {
 
   private int id;
-  private double weight;
 
-  public Key(String type, String name, String description, int id, double weight) {
-    super(type, name, description);
+  public Key(String type, String name, String description, double weight, int id) {
+    super(type, name, description, weight);
     this.id = id;
-    this.weight = weight;
   }
 
   public int getId() {
@@ -17,13 +15,5 @@ public class Key extends Item {
 
   public void setId(int id) {
     this.id = id;
-  }
-
-  public double getWeight() {
-    return weight;
-  }
-
-  public void setWeight(double weight) {
-    this.weight = weight;
   }
 }
