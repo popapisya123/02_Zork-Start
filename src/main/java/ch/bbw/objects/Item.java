@@ -6,12 +6,14 @@ public class Item {
     private String name;
     private String description;
     private double weight;
+    private boolean isPickable;
 
-    public Item(String type, String name, String description, double weight) {
+    public Item(String type, String name, String description, double weight, boolean isPickable) {
         this.type = type;
         this.name = name;
         this.description = description;
         this.weight = weight;
+        this.isPickable = isPickable;
     }
 
     public String getType() {
@@ -44,5 +46,13 @@ public class Item {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public boolean isPickable() {
+        return isPickable;
+    }
+
+    public void setPickable(boolean pickable) {
+        isPickable = pickable;
     }
 }
