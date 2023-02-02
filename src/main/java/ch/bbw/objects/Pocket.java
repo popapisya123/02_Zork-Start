@@ -35,7 +35,7 @@ public class Pocket {
       totalWeight += crowbar.getWeight();
     }
 
-    return totalWeight <= 30;
+    return totalWeight <= 20;
   }
 
   public void showItems() {
