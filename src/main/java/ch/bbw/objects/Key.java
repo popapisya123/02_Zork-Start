@@ -2,18 +2,7 @@ package ch.bbw.objects;
 
 public class Key extends Item {
 
-  private int id;
-
-  public Key (String name, String description, int id) {
-    super("key", name, description, 5, true);
-    this.id = id;
-  }
-
-  public int getId() {
-    return id;
-  }
-
-  public void setId(int id) {
-    this.id = id;
+  public Key(int id, String description, double weight) {
+    super(id, Type.KEY, description, weight, true);
   }
 }

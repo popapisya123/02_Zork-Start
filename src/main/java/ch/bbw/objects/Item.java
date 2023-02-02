@@ -2,34 +2,34 @@ package ch.bbw.objects;
 
 public class Item {
 
-    private String type;
-    private String name;
+    private int id;
+    private Type type;
     private String description;
     private double weight;
     private boolean isPickable;
 
-    public Item(String type, String name, String description, double weight, boolean isPickable) {
+    public Item(int id, Type type, String description, double weight, boolean isPickable) {
+        this.id = id;
         this.type = type;
-        this.name = name;
         this.description = description;
         this.weight = weight;
         this.isPickable = isPickable;
     }
 
-    public String getType() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Type getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getDescription() {
