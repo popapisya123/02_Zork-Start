@@ -4,8 +4,8 @@ public class Crowbar extends Item {
 
   private int id;
 
-  public Crowbar(String type, String name, String description, double weight, int id) {
-    super(type, name, description, weight);
+  public Crowbar(String name, String description, int id) {
+    super("crowbar", name, description, 30);
     this.id = id;
   }
 
