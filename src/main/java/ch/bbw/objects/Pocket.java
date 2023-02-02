@@ -4,49 +4,31 @@ import java.util.ArrayList;
 
 public class Pocket {
 
-  private ArrayList<Key> keys = new ArrayList<>();
-  private Crowbar crowbar;
+  private final ArrayList<Item> items = new ArrayList<>();
+  private double totalWeight = 0;
 
-  public ArrayList<Key> getKeys() {
-    return keys;
-  }
-
-  public void setKeys(ArrayList<Key> keys) {
-    this.keys = keys;
-  }
-
-  public Crowbar getCrowbar() {
-    return crowbar;
-  }
-
-  public void setCrowbar(Crowbar crowbar) {
-    this.crowbar = crowbar;
+  public ArrayList<Item> getItems() {
+    return items;
   }
 
   public boolean isAbleToAddItem() {
-    double totalWeight = 0;
-    if (keys.size() > 0) {
-      for (Key key : keys) {
-        totalWeight += key.getWeight();
+    if (items.size() > 0) {
+      for (Item item : items) {
+        totalWeight += item.getWeight();
       }
-    }
-
-    if (crowbar != null) {
-      totalWeight += crowbar.getWeight();
     }
 
     return totalWeight <= 20;
   }
 
   public void showItems() {
-    System.out.print("You have following items in your pocket");
-    if (keys.size() > 0) {
-      for (Key key : keys) {
-        System.out.print(", " + key.getDescription());
+    if (items.size() > 0) {
+      System.out.println("You have following items in your pocket:");
+      for (Item item : items) {
+        System.out.println("  - " + item.getDescription());
       }
-    }
-    if (crowbar != null) {
-      System.out.println(", " + getCrowbar().getDescription());
+    } else {
+      System.out.println("You have no item in your pocket.");
     }
   }
 }

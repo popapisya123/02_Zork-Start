@@ -1,7 +1,6 @@
 package ch.bbw.objects;
 
 public enum Type {
-  KEY,
-  CROWBAR,
-  FURNITURE
+  KEY, CROWBAR, FURNITURE
+
 }
