@@ -1,5 +1,7 @@
 package ch.bbw.objects;
 
+import ch.bbw.zork.Room;
+
 import java.util.ArrayList;
 
 public class Pocket {
@@ -45,7 +47,13 @@ public class Pocket {
     }
   }
 
-  public boolean dropItem(int itemId) {
-    return items.removeIf(item -> item.getId() == itemId);
+  public void dropItem(int itemId, Room room) {
+    for (Item item : items) {
+      if (item.getId() == itemId) {
+        room.getItems().add(item);
+        items.remove(item);
+        break;
+      }
+    }
   }
 }
