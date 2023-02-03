@@ -39,17 +39,16 @@ office = new Room("the computing admin office, the window is opened, it's cold h
 
 ## Das Ziel vom Spiel
 
-Ziel des Spiels ist es, einen Schlüssel zu finden, um damit die richtige Tür zu öffnen und aus der Psychiatrische Klinik zu entkommen, und das alles innerhalb eines Zeitlimits.
-
+Ziel des Spiels ist es, einen Schlüssel zu finden, um damit die richtige Tür zu öffnen und aus der Psychiatrische Klinik zu entkommen.
 
 ## Welche Klassen müssen implementiert werden?
 
-Ein Timer, damit man zeitlich limitiert ist.
 Eine Klasse für verschiedene Gegenstände, die man in einem Raum finden kann.
-Eine Klasse für Hunter, der den Spieler jagt, und wenn man falsche Entscheidungen trifft, kommt er immer näher 
-
+Neue Befehle einführen, damit man mehr Möglichekiten hat während dem Spielverlauf.
+Die Logik dementsprechend anzupassen.
 
 ## Welche Räume müssen erstellt werden?
+
 - Laboratory
 - Patient Room
 - Treatment Room
